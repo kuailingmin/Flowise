@@ -401,64 +401,64 @@ const ShareChatbot = ({ isSessionMemory }) => {
                             onSwitchChange(event.target.checked)
                         }}
                     />
-                    <Typography>Make Public</Typography>
+                    <Typography>公开访问</Typography>
                     <TooltipWithParser
                         style={{ marginLeft: 10 }}
-                        title={'Making public will allow anyone to access the chatbot without username & password'}
+                        title={'公开将允许任何人在没有用户名和密码的情况下访问聊天机器人'}
                     />
                 </div>
             </Stack>
-            {textField(title, 'title', 'Title', 'string', 'Flowise Assistant')}
+            {textField(title, 'title', '标题', 'string', 'Flowise 助理')}
             {textField(
                 titleAvatarSrc,
                 'titleAvatarSrc',
-                'Title Avatar Link',
+                '标题头像链接',
                 'string',
                 `https://raw.githubusercontent.com/FlowiseAI/Flowise/main/assets/FloWiseAI_dark.png`
             )}
-            {textField(welcomeMessage, 'welcomeMessage', 'Welcome Message', 'string', 'Hello! This is custom welcome message')}
-            {colorField(backgroundColor, 'backgroundColor', 'Background Color')}
-            {textField(fontSize, 'fontSize', 'Font Size', 'number')}
-            {colorField(poweredByTextColor, 'poweredByTextColor', 'PoweredBy TextColor')}
+            {textField(welcomeMessage, 'welcomeMessage', '欢迎信息', 'string', 'Hello! 这里自定义欢迎信息')}
+            {colorField(backgroundColor, 'backgroundColor', '背景颜色')}
+            {textField(fontSize, 'fontSize', '字体尺寸', 'number')}
+            {colorField(poweredByTextColor, 'poweredByTextColor', '字体颜色')}
 
             {/*BOT Message*/}
             <Typography variant='h4' sx={{ mb: 1, mt: 2 }}>
-                Bot Message
+                机器人信息
             </Typography>
-            {colorField(botMessageBackgroundColor, 'botMessageBackgroundColor', 'Background Color')}
-            {colorField(botMessageTextColor, 'botMessageTextColor', 'Text Color')}
+            {colorField(botMessageBackgroundColor, 'botMessageBackgroundColor', '背景颜色')}
+            {colorField(botMessageTextColor, 'botMessageTextColor', '文字颜色')}
             {textField(
                 botMessageAvatarSrc,
                 'botMessageAvatarSrc',
-                'Avatar Link',
+                '头像链接',
                 'string',
                 `https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png`
             )}
-            {booleanField(botMessageShowAvatar, 'botMessageShowAvatar', 'Show Avatar')}
+            {booleanField(botMessageShowAvatar, 'botMessageShowAvatar', '显示头像')}
 
             {/*USER Message*/}
             <Typography variant='h4' sx={{ mb: 1, mt: 2 }}>
-                User Message
+                用户信息
             </Typography>
-            {colorField(userMessageBackgroundColor, 'userMessageBackgroundColor', 'Background Color')}
-            {colorField(userMessageTextColor, 'userMessageTextColor', 'Text Color')}
+            {colorField(userMessageBackgroundColor, 'userMessageBackgroundColor', '背景颜色')}
+            {colorField(userMessageTextColor, 'userMessageTextColor', '字体颜色')}
             {textField(
                 userMessageAvatarSrc,
                 'userMessageAvatarSrc',
-                'Avatar Link',
+                '头像链接',
                 'string',
                 `https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png`
             )}
-            {booleanField(userMessageShowAvatar, 'userMessageShowAvatar', 'Show Avatar')}
+            {booleanField(userMessageShowAvatar, 'userMessageShowAvatar', '显示头像')}
 
             {/*TEXT Input*/}
             <Typography variant='h4' sx={{ mb: 1, mt: 2 }}>
-                Text Input
+                文字输入
             </Typography>
-            {colorField(textInputBackgroundColor, 'textInputBackgroundColor', 'Background Color')}
-            {colorField(textInputTextColor, 'textInputTextColor', 'Text Color')}
-            {textField(textInputPlaceholder, 'textInputPlaceholder', 'TextInput Placeholder', 'string', `Type question..`)}
-            {colorField(textInputSendButtonColor, 'textInputSendButtonColor', 'TextIntput Send Button Color')}
+            {colorField(textInputBackgroundColor, 'textInputBackgroundColor', '背景颜色')}
+            {colorField(textInputTextColor, 'textInputTextColor', '字体颜色')}
+            {textField(textInputPlaceholder, 'textInputPlaceholder', '文字输入提示', 'string', `Type question..`)}
+            {colorField(textInputSendButtonColor, 'textInputSendButtonColor', '发送按钮颜色')}
 
             {/*Session Memory Input*/}
             {isSessionMemory && (

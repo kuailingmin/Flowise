@@ -231,7 +231,7 @@ const AddNodes = ({ nodesData, node }) => {
                                 <MainCard border={false} elevation={16} content={false} boxShadow shadow={theme.shadows[16]}>
                                     <Box sx={{ p: 2 }}>
                                         <Stack>
-                                            <Typography variant='h4'>Add Nodes</Typography>
+                                            <Typography variant='h4'>添加节点</Typography>
                                         </Stack>
                                         <OutlinedInput
                                             sx={{ width: '100%', pr: 2, pl: 2, my: 2 }}

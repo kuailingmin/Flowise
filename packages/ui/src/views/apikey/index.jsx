@@ -231,7 +231,7 @@ const APIKey = () => {
 
     const addNew = () => {
         const dialogProp = {
-            title: 'Add New API Key',
+            title: '新增 API Key',
             type: 'ADD',
             cancelButtonName: 'Cancel',
             confirmButtonName: 'Add'
@@ -242,7 +242,7 @@ const APIKey = () => {
 
     const edit = (key) => {
         const dialogProp = {
-            title: 'Edit API Key',
+            title: '更新 API Key',
             type: 'EDIT',
             cancelButtonName: 'Cancel',
             confirmButtonName: 'Save',
@@ -254,7 +254,7 @@ const APIKey = () => {
 
     const deleteKey = async (key) => {
         const confirmPayload = {
-            title: `Delete`,
+            title: `删除`,
             description:
                 key.chatFlows.length === 0
                     ? `Delete key [${key.keyName}] ? `
