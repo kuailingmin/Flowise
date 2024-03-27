@@ -245,7 +245,7 @@ const AddEditCredentialDialog = ({ show, dialogProps, onCancel, onConfirm }) => 
                     <Box sx={{ p: 2 }}>
                         <Stack sx={{ position: 'relative' }} direction='row'>
                             <Typography variant='overline'>
-                                Credential Name
+                               凭据名称
                                 <span style={{ color: 'red' }}>&nbsp;*</span>
                             </Typography>
                         </Stack>
@@ -270,7 +270,7 @@ const AddEditCredentialDialog = ({ show, dialogProps, onCancel, onConfirm }) => 
                 <StyledButton
                     disabled={!name}
                     variant='contained'
-                    onClick={() => (dialogProps.type === 'ADD' ? addNewCredential() : saveCredential())}
+                    onClick={() => (dialogProps.type === '添加' ? addNewCredential() : saveCredential())}
                 >
                     {dialogProps.confirmButtonName}
                 </StyledButton>

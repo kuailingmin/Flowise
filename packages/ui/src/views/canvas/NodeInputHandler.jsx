@@ -332,7 +332,7 @@ const NodeInputHandler = ({ inputAnchor, inputParam, data, disabled = false, isA
                                 disabled={disabled}
                                 fileType={inputParam.fileType || '*'}
                                 onChange={(newValue) => (data.inputs[inputParam.name] = newValue)}
-                                value={data.inputs[inputParam.name] ?? inputParam.default ?? 'Choose a file to upload'}
+                                value={data.inputs[inputParam.name] ?? inputParam.default ?? '选择文件上传'}
                             />
                         )}
                         {inputParam.type === 'boolean' && (

@@ -38,7 +38,7 @@ const Assistants = () => {
 
     const loadExisting = () => {
         const dialogProp = {
-            title: 'Load Existing Assistant'
+            title: '加载现有助手'
         }
         setLoadDialogProps(dialogProp)
         setShowLoadDialog(true)
@@ -51,10 +51,10 @@ const Assistants = () => {
 
     const addNew = (selectedOpenAIAssistantId, credential) => {
         const dialogProp = {
-            title: '新增 Assistant',
+            title: '新增助理',
             type: 'ADD',
-            cancelButtonName: 'Cancel',
-            confirmButtonName: 'Add',
+            cancelButtonName: '取消',
+            confirmButtonName: '新增',
             selectedOpenAIAssistantId,
             credential
         }
@@ -64,10 +64,10 @@ const Assistants = () => {
 
     const edit = (selectedAssistant) => {
         const dialogProp = {
-            title: 'Edit Assistant',
+            title: '编辑助手',
             type: 'EDIT',
-            cancelButtonName: 'Cancel',
-            confirmButtonName: 'Save',
+            cancelButtonName: '取消',
+            confirmButtonName: '保存',
             data: selectedAssistant
         }
         setDialogProps(dialogProp)
@@ -94,10 +94,10 @@ const Assistants = () => {
                         <Box sx={{ flexGrow: 1 }} />
                         <Grid item>
                             <Button variant='outlined' sx={{ mr: 2 }} onClick={loadExisting} startIcon={<IconFileImport />}>
-                                Load
+                                载入
                             </Button>
                             <StyledButton variant='contained' sx={{ color: 'white' }} onClick={addNew} startIcon={<IconPlus />}>
-                                Add
+                                新增
                             </StyledButton>
                         </Grid>
                     </Grid>
@@ -123,7 +123,7 @@ const Assistants = () => {
                         <Box sx={{ p: 2, height: 'auto' }}>
                             <img style={{ objectFit: 'cover', height: '30vh', width: 'auto' }} src={ToolEmptySVG} alt='ToolEmptySVG' />
                         </Box>
-                        <div>No Assistants Added Yet</div>
+                        <div>尚未添加助理</div>
                     </Stack>
                 )}
             </MainCard>

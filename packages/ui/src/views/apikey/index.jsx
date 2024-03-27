@@ -57,7 +57,7 @@ import {
 } from '@tabler/icons'
 import APIEmptySVG from '@/assets/images/api_empty.svg'
 import * as PropTypes from 'prop-types'
-import moment from 'moment/moment'
+import moment from 'moment'
 
 // ==============================|| APIKey ||============================== //
 const StyledTableCell = styled(TableCell)(({ theme }) => ({

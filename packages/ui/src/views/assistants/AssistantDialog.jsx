@@ -414,10 +414,10 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                 <Box sx={{ p: 2 }}>
                     <Stack sx={{ position: 'relative' }} direction='row'>
                         <Typography variant='overline'>
-                            Assistant Name
+                            助理名称
                             <TooltipWithParser
                                 style={{ marginLeft: 10 }}
-                                title={'The name of the assistant. The maximum length is 256 characters.'}
+                                title={'最大长度为256个字符'}
                             />
                         </Typography>
                     </Stack>
@@ -425,7 +425,7 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                         id='assistantName'
                         type='string'
                         fullWidth
-                        placeholder='My New Assistant'
+                        placeholder='请输入助理名称'
                         value={assistantName}
                         name='assistantName'
                         onChange={(e) => setAssistantName(e.target.value)}
@@ -434,10 +434,10 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                 <Box sx={{ p: 2 }}>
                     <Stack sx={{ position: 'relative' }} direction='row'>
                         <Typography variant='overline'>
-                            Assistant Description
+                            辅助说明
                             <TooltipWithParser
                                 style={{ marginLeft: 10 }}
-                                title={'The description of the assistant. The maximum length is 512 characters.'}
+                                title={'最大长度为512个字符'}
                             />
                         </Typography>
                     </Stack>
@@ -445,7 +445,7 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                         id='assistantDesc'
                         type='string'
                         fullWidth
-                        placeholder='Description of what the Assistant does'
+                        placeholder='描述助理工作说明'
                         multiline={true}
                         rows={3}
                         value={assistantDesc}
@@ -455,7 +455,7 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                 </Box>
                 <Box sx={{ p: 2 }}>
                     <Stack sx={{ position: 'relative' }} direction='row'>
-                        <Typography variant='overline'>Assistant Icon Src</Typography>
+                        <Typography variant='overline'>助理图标</Typography>
                     </Stack>
                     <div
                         style={{
@@ -490,7 +490,7 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                 <Box sx={{ p: 2 }}>
                     <Stack sx={{ position: 'relative' }} direction='row'>
                         <Typography variant='overline'>
-                            Assistant Model
+                            助理AI模型
                             <span style={{ color: 'red' }}>&nbsp;*</span>
                         </Typography>
                     </Stack>
@@ -505,7 +505,7 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                 <Box sx={{ p: 2 }}>
                     <Stack sx={{ position: 'relative' }} direction='row'>
                         <Typography variant='overline'>
-                            OpenAI Credential
+                            OpenAI 凭证
                             <span style={{ color: 'red' }}>&nbsp;*</span>
                         </Typography>
                     </Stack>
@@ -524,10 +524,10 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                 <Box sx={{ p: 2 }}>
                     <Stack sx={{ position: 'relative' }} direction='row'>
                         <Typography variant='overline'>
-                            Assistant Instruction
+                            辅助学习
                             <TooltipWithParser
                                 style={{ marginLeft: 10 }}
-                                title={'The system instructions that the assistant uses. The maximum length is 32768 characters.'}
+                                title={'输入指令限制最大长度为32768个字符。'}
                             />
                         </Typography>
                     </Stack>
@@ -535,7 +535,7 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                         id='assistantInstructions'
                         type='string'
                         fullWidth
-                        placeholder='You are a personal math tutor. When asked a question, write and run Python code to answer the question.'
+                        placeholder='你是一位私人数学导师。当被问到问题时，编写并运行Python代码来回答问题。'
                         multiline={true}
                         rows={3}
                         value={assistantInstructions}
@@ -546,10 +546,10 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                 <Box sx={{ p: 2 }}>
                     <Stack sx={{ position: 'relative' }} direction='row'>
                         <Typography variant='overline'>
-                            Assistant Tools
+                            助理工具
                             <TooltipWithParser
                                 style={{ marginLeft: 10 }}
-                                title='A list of tool enabled on the assistant. There can be a maximum of 128 tools per assistant.'
+                                title='在助手上启用的工具列表。每个助手最多可以有128个工具。'
                             />
                         </Typography>
                     </Stack>
@@ -573,10 +573,10 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                 <Box sx={{ p: 2 }}>
                     <Stack sx={{ position: 'relative' }} direction='row'>
                         <Typography variant='overline'>
-                            Knowledge Files
+                            知识文件
                             <TooltipWithParser
                                 style={{ marginLeft: 10 }}
-                                title='Allow assistant to use the content from uploaded files for retrieval and code interpreter. MAX: 20 files'
+                                title='允许助手使用上传文件中的内容进行检索和代码解释器，最大：20个文件'
                             />
                         </Typography>
                     </Stack>
@@ -610,7 +610,7 @@ const AssistantDialog = ({ show, dialogProps, onCancel, onConfirm }) => {
                         key={uploadAssistantFiles}
                         fileType='*'
                         onChange={(newValue) => setUploadAssistantFiles(newValue)}
-                        value={uploadAssistantFiles ?? 'Choose a file to upload'}
+                        value={uploadAssistantFiles ?? '选择文件上传'}
                     />
                 </Box>
             </DialogContent>

@@ -55,7 +55,7 @@ const LoadAssistantDialog = ({ show, dialogProps, onCancel, onAssistantSelected 
                 <Box sx={{ p: 2 }}>
                     <Stack sx={{ position: 'relative' }} direction='row'>
                         <Typography variant='overline'>
-                            OpenAI Credential
+                            OPENAI凭据
                             <span style={{ color: 'red' }}>&nbsp;*</span>
                         </Typography>
                     </Stack>
@@ -78,7 +78,7 @@ const LoadAssistantDialog = ({ show, dialogProps, onCancel, onAssistantSelected 
                     <Box sx={{ p: 2 }}>
                         <Stack sx={{ position: 'relative' }} direction='row'>
                             <Typography variant='overline'>
-                                Assistants
+                                助理
                                 <span style={{ color: 'red' }}>&nbsp;*</span>
                             </Typography>
                         </Stack>
@@ -86,7 +86,7 @@ const LoadAssistantDialog = ({ show, dialogProps, onCancel, onAssistantSelected 
                             name={selectedOpenAIAssistantId}
                             options={availableAssistantsOptions}
                             onSelect={(newValue) => setSelectedOpenAIAssistantId(newValue)}
-                            value={selectedOpenAIAssistantId ?? 'choose an option'}
+                            value={selectedOpenAIAssistantId ?? '选择一个选项'}
                         />
                     </Box>
                 )}
@@ -94,7 +94,7 @@ const LoadAssistantDialog = ({ show, dialogProps, onCancel, onAssistantSelected 
             {selectedOpenAIAssistantId && (
                 <DialogActions>
                     <StyledButton variant='contained' onClick={() => onAssistantSelected(selectedOpenAIAssistantId, credentialId)}>
-                        Load
+                        载入
                     </StyledButton>
                 </DialogActions>
             )}

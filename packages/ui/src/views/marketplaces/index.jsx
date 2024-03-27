@@ -238,14 +238,14 @@ const Marketplace = () => {
                             width: '100%'
                         }}
                     >
-                        <h1>Marketplace</h1>
+                        <h1 style={{width:'170px'}}>应用商店</h1>
                         <TextField
                             size='small'
                             id='search-filter-textbox'
                             sx={{ display: { xs: 'none', sm: 'block' }, ml: 3 }}
                             variant='outlined'
                             fullWidth='true'
-                            placeholder='Search name or description or node name'
+                            placeholder='根据名称或描述或节点名称搜索'
                             onChange={onSearchChange}
                             InputProps={{
                                 startAdornment: (
@@ -261,7 +261,7 @@ const Marketplace = () => {
                             onClick={() => setOpen(!open)}
                             startIcon={open ? <IconChevronsUp /> : <IconChevronsDown />}
                         >
-                            {open ? 'Hide Filters' : 'Show Filters'}
+                            {open ? '隐藏筛选条件' : '显示筛选条件'}
                         </Button>
                         <Box sx={{ flexGrow: 1 }} />
                         <ButtonGroup sx={{ maxHeight: 40 }} disableElevation variant='contained' aria-label='outlined primary button group'>

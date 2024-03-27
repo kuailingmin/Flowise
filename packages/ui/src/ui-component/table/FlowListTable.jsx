@@ -1,6 +1,12 @@
 import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
-import moment from 'moment'
+// 导入moment
+import moment from 'moment';
+// 导入中文语言包
+import 'moment/dist/locale/zh-cn';
+// 设置中文
+moment.locale('zh-cn');
+
 import { styled } from '@mui/material/styles'
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
@@ -12,6 +18,7 @@ import Paper from '@mui/material/Paper'
 import Chip from '@mui/material/Chip'
 import { Button, Stack, Typography } from '@mui/material'
 import FlowListMenu from '../button/FlowListMenu'
+
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -131,7 +138,7 @@ export const FlowListTable = ({ data, images, filterFunction, updateFlowsApi }) 
                                         </div>
                                     )}
                                 </TableCell>
-                                <TableCell key='3'>{moment(row.updatedDate).format('MMMM Do, YYYY')}</TableCell>
+                                <TableCell key='3'>{moment(row.updatedDate).format('LLL')}</TableCell>
                                 <TableCell key='4'>
                                     <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1} justifyContent='center' alignItems='center'>
                                         <FlowListMenu chatflow={row} updateFlowsApi={updateFlowsApi} />

@@ -21,7 +21,7 @@ const dashboard = {
         },
         {
             id: 'marketplaces',
-            title: 'Marketplaces',
+            title: '应用商店',
             type: 'item',
             url: '/marketplaces',
             icon: icons.IconBuildingStore,
@@ -29,7 +29,7 @@ const dashboard = {
         },
         {
             id: 'tools',
-            title: 'Tools',
+            title: '工具',
             type: 'item',
             url: '/tools',
             icon: icons.IconTool,
@@ -37,7 +37,7 @@ const dashboard = {
         },
         {
             id: 'assistants',
-            title: 'Assistants',
+            title: 'AI助理',
             type: 'item',
             url: '/assistants',
             icon: icons.IconRobot,
